@@ -40,27 +40,7 @@ namespace Simple_Calculator
 
         }
 
-        private void Button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button5_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Zero_Click(object sender, EventArgs e)
         {
 
         }
@@ -71,32 +51,22 @@ namespace Simple_Calculator
 
         }
 
-        private void Dot_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Plus_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Two_Click(object sender, EventArgs e)
+        public void CalculatorScreen(object sender, EventArgs e)
         {
-            string ch = "2";
-            calculatorScreen.Text = ch;
+            
         }
 
-        private void One_Click(object sender, EventArgs e)
+        private void Num_Click(object sender, EventArgs e)
         {
-            string ch = "1";
-            calculatorScreen.Text = ch;
-        }
-
-
-        public void CalculatorScreen_Click(object sender, EventArgs e)
-        {
-            string input;
+            Button button = (Button)sender;
+            calculatorScreen.Text = calculatorScreen.Text + button.Text;
+            
         }
     }
 }
