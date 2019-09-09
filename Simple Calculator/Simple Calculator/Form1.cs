@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//RENAME DESIGNS
+
 namespace Simple_Calculator
 {
-    public partial class Form1 : Form
+    public partial class Calculator : Form
     {
-        public Form1()
+        public Calculator()
         {
             InitializeComponent();
         }
@@ -22,15 +24,6 @@ namespace Simple_Calculator
 
         }
 
-        private void Button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Button2_Click(object sender, EventArgs e)
         {
@@ -70,6 +63,40 @@ namespace Simple_Calculator
         private void Zero_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void Button21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dot_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Plus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Two_Click(object sender, EventArgs e)
+        {
+            string ch = "2";
+            calculatorScreen.Text = ch;
+        }
+
+        private void One_Click(object sender, EventArgs e)
+        {
+            string ch = "1";
+            calculatorScreen.Text = ch;
+        }
+
+
+        public void CalculatorScreen_Click(object sender, EventArgs e)
+        {
+            string input;
         }
     }
 }
