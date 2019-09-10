@@ -14,59 +14,79 @@ namespace Simple_Calculator
 {
     public partial class Calculator : Form
     {
+        Double result = 0;
+        String operation = "";
+        bool isOperated = false;
         public Calculator()
         {
             InitializeComponent();
         }
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button4_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void Button21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void Plus_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public void CalculatorScreen(object sender, EventArgs e)
-        {
-            
-        }
-
         private void Num_Click(object sender, EventArgs e)
         {
+            if ((calculatorScreen.Text == "0") || isOperated )
+                calculatorScreen.Text = "";
+            isOperated = false;
             Button button = (Button)sender;
-            calculatorScreen.Text = calculatorScreen.Text + button.Text;
-            
+            if (button.Text == ".")
+            {
+                if (!calculatorScreen.Text.Contains("."))
+                    calculatorScreen.Text = calculatorScreen.Text + button.Text;
+            }
+            else
+                calculatorScreen.Text = calculatorScreen.Text + button.Text;
         }
+
+        private void Button24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Operator_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            operation = button.Text;
+            result = Double.Parse(calculatorScreen.Text);
+            isOperated = true;
+            operationScreen.Text = result + " " + operation + " ";
+        }
+
+        private void Clear_Entry_Click(object sender, EventArgs e)
+        {
+            calculatorScreen.Text = "0";
+            result = 0;
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            calculatorScreen.Text = "0";
+        }
+
+        private void Backspace_Click(object sender, EventArgs e)
+        {
+            calculatorScreen.Text = 
+                calculatorScreen.Text.Remove(calculatorScreen.Text.Length-1, 1);
+        }
+
+        private void Equal_Click(object sender, EventArgs e)
+        {
+            switch (operation)
+            {
+                case "+":
+                    calculatorScreen.Text = (result + Double.Parse(calculatorScreen.Text)).ToString();
+                    break;
+                case "-":
+                    calculatorScreen.Text = (result - Double.Parse(calculatorScreen.Text)).ToString();
+                    break;
+                case "*":
+                    calculatorScreen.Text = (result * Double.Parse(calculatorScreen.Text)).ToString();
+                    break;
+                case "/":
+                    calculatorScreen.Text = (result / Double.Parse(calculatorScreen.Text)).ToString();
+                    break;
+            }
+            operationScreen.Text = operationScreen.Text + calculatorScreen.Text;
+        }
+
     }
 }

@@ -54,7 +54,7 @@
             this.button24 = new System.Windows.Forms.Button();
             this.calculatorScreen = new System.Windows.Forms.Label();
             this.One = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.operationScreen = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -67,7 +67,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Standard Calculator";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // zero
             // 
@@ -90,7 +89,7 @@
             this.positiveNegative.TabIndex = 8;
             this.positiveNegative.Text = "+ or -";
             this.positiveNegative.UseVisualStyleBackColor = true;
-            this.positiveNegative.Click += new System.EventHandler(this.Button2_Click);
+            this.positiveNegative.Click += new System.EventHandler(this.Button24_Click);
             // 
             // dot
             // 
@@ -112,7 +111,7 @@
             this.equal.TabIndex = 10;
             this.equal.Text = "=";
             this.equal.UseVisualStyleBackColor = true;
-            this.equal.Click += new System.EventHandler(this.Button4_Click_1);
+            this.equal.Click += new System.EventHandler(this.Equal_Click);
             // 
             // two
             // 
@@ -147,7 +146,7 @@
             this.plus.TabIndex = 14;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
-            this.plus.Click += new System.EventHandler(this.Plus_Click);
+            this.plus.Click += new System.EventHandler(this.Operator_Click);
             // 
             // button9
             // 
@@ -194,6 +193,7 @@
             this.button12.TabIndex = 18;
             this.button12.Text = "-";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.Operator_Click);
             // 
             // button13
             // 
@@ -238,8 +238,9 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(172, 111);
             this.button16.TabIndex = 22;
-            this.button16.Text = "x";
+            this.button16.Text = "*";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.Operator_Click);
             // 
             // button17
             // 
@@ -250,6 +251,7 @@
             this.button17.TabIndex = 23;
             this.button17.Text = "CE";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.Clear_Entry_Click);
             // 
             // button18
             // 
@@ -260,6 +262,7 @@
             this.button18.TabIndex = 24;
             this.button18.Text = "C";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.Clear_Click);
             // 
             // button19
             // 
@@ -270,6 +273,7 @@
             this.button19.TabIndex = 25;
             this.button19.Text = "<-";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.Backspace_Click);
             // 
             // button20
             // 
@@ -280,7 +284,7 @@
             this.button20.TabIndex = 26;
             this.button20.Text = "/";
             this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.Button20_Click);
+            this.button20.Click += new System.EventHandler(this.Operator_Click);
             // 
             // button21
             // 
@@ -291,7 +295,7 @@
             this.button21.TabIndex = 27;
             this.button21.Text = "%";
             this.button21.UseVisualStyleBackColor = true;
-            this.button21.Click += new System.EventHandler(this.Button21_Click);
+            this.button21.Click += new System.EventHandler(this.Button24_Click);
             // 
             // button22
             // 
@@ -302,6 +306,7 @@
             this.button22.TabIndex = 28;
             this.button22.Text = "SQRT()";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.Button24_Click);
             // 
             // button23
             // 
@@ -312,6 +317,7 @@
             this.button23.TabIndex = 29;
             this.button23.Text = "x^2";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.Button24_Click);
             // 
             // button24
             // 
@@ -322,14 +328,16 @@
             this.button24.TabIndex = 30;
             this.button24.Text = "1/x";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.Button24_Click);
             // 
             // calculatorScreen
             // 
             this.calculatorScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculatorScreen.Location = new System.Drawing.Point(19, 66);
+            this.calculatorScreen.Location = new System.Drawing.Point(19, 184);
             this.calculatorScreen.Name = "calculatorScreen";
-            this.calculatorScreen.Size = new System.Drawing.Size(698, 208);
+            this.calculatorScreen.Size = new System.Drawing.Size(698, 90);
             this.calculatorScreen.TabIndex = 31;
+            this.calculatorScreen.Text = "0";
             this.calculatorScreen.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // One
@@ -344,14 +352,14 @@
             this.One.UseVisualStyleBackColor = false;
             this.One.Click += new System.EventHandler(this.Num_Click);
             // 
-            // label2
+            // operationScreen
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(431, 137);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 25);
-            this.label2.TabIndex = 33;
-            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.operationScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.operationScreen.Location = new System.Drawing.Point(32, 67);
+            this.operationScreen.Name = "operationScreen";
+            this.operationScreen.Size = new System.Drawing.Size(683, 117);
+            this.operationScreen.TabIndex = 34;
+            this.operationScreen.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // Calculator
             // 
@@ -360,7 +368,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(728, 1012);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.operationScreen);
             this.Controls.Add(this.One);
             this.Controls.Add(this.calculatorScreen);
             this.Controls.Add(this.button24);
@@ -379,7 +387,6 @@
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.plus);
             this.Controls.Add(this.three);
             this.Controls.Add(this.two);
             this.Controls.Add(this.equal);
@@ -387,9 +394,11 @@
             this.Controls.Add(this.positiveNegative);
             this.Controls.Add(this.zero);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.plus);
             this.Name = "Calculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Click += new System.EventHandler(this.Button24_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,7 +432,7 @@
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Label calculatorScreen;
         private System.Windows.Forms.Button One;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label operationScreen;
     }
 }
 
