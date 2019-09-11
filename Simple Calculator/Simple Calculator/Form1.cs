@@ -53,30 +53,31 @@ namespace Simple_Calculator
 
             if (result != 0)
             {
-                equal.PerformClick();
+                operationScreen.Text = operationScreen.Text + " " + calculatorScreen.Text + " " + operation + " ";
+                Equal();
                 operation = button.Text;
                 isOperated = true;
-                operationScreen.Text = result + " " + operation + " ";
             }
+
             else
             {
                 operation = button.Text;
                 result = Double.Parse(calculatorScreen.Text);
+                operationScreen.Text = calculatorScreen.Text + " " + operation;
                 isOperated = true;
-                operationScreen.Text = result + " " + operation + " ";
             }
         }
 
         private void Clear_Entry_Click(object sender, EventArgs e)
         {
             calculatorScreen.Text = "0";
+            operationScreen.Text = " ";
             result = 0;
         }
 
         private void Clear_Click(object sender, EventArgs e)
         {
             calculatorScreen.Text = "0";
-            operationScreen.Text = " ";
         }
 
         private void Backspace_Click(object sender, EventArgs e)
@@ -86,6 +87,25 @@ namespace Simple_Calculator
                     calculatorScreen.Text.Remove(calculatorScreen.Text.Length - 1, 1);
         }
 
+        private void Equal()
+        {
+            switch (operation)
+            {
+                case "+":
+                    calculatorScreen.Text = (result + Double.Parse(calculatorScreen.Text)).ToString();
+                    break;
+                case "-":
+                    calculatorScreen.Text = (result - Double.Parse(calculatorScreen.Text)).ToString();
+                    break;
+                case "*":
+                    calculatorScreen.Text = (result * Double.Parse(calculatorScreen.Text)).ToString();
+                    break;
+                case "/":
+                    calculatorScreen.Text = (result / Double.Parse(calculatorScreen.Text)).ToString();
+                    break;
+            }
+            result = double.Parse(calculatorScreen.Text);
+        }
         private void Equal_Click(object sender, EventArgs e)
         {
             switch (operation)
@@ -103,11 +123,9 @@ namespace Simple_Calculator
                     calculatorScreen.Text = (result / Double.Parse(calculatorScreen.Text)).ToString();
                     break;
             }
-            //operationScreen.Text = operationScreen.Text + calculatorScreen.Text;
             result = double.Parse(calculatorScreen.Text);
-            operationScreen.Text = " ";// NEED TO SEE ALL OPERATION, NEED CHANGING
+            operationScreen.Text = " ";
         }
-
         private void PosNeg_Click(object sender, EventArgs e)
         {
             if (isPositive)
@@ -124,21 +142,20 @@ namespace Simple_Calculator
 
         private void Sqrt_Click(object sender, EventArgs e)
         {
-            operationScreen.Text = "sqrt" + "(" + calculatorScreen.Text + ")";
+            operationScreen.Text = operationScreen.Text+ "sqrt" + "(" + calculatorScreen.Text + ")";
             calculatorScreen.Text = Convert.ToString(Math.Sqrt(double.Parse(calculatorScreen.Text)));
             
         }
-        //Need to show to operatorscreen
 
         private void Square_Click(object sender, EventArgs e)
         {
-            operationScreen.Text = "sqr" + "(" + calculatorScreen.Text + ")";
+            operationScreen.Text = operationScreen.Text + "sqr" + "(" + calculatorScreen.Text + ")";
             calculatorScreen.Text = Convert.ToString(Math.Pow(double.Parse(calculatorScreen.Text), 2));
         }
 
         private void OneOver_Click(object sender, EventArgs e)
         {
-            operationScreen.Text = "(1/" + calculatorScreen.Text + ")";
+            operationScreen.Text = operationScreen.Text + "(1/" + calculatorScreen.Text + ")";
             calculatorScreen.Text = Convert.ToString(1 / (double.Parse(calculatorScreen.Text)));
         }
     }
