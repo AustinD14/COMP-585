@@ -29,7 +29,7 @@ namespace Simple_Calculator
         private void Num_Click(object sender, EventArgs e)
         {
 
-            if ((calculatorScreen.Text == "0") || isOperated )
+            if ((calculatorScreen.Text == "0") || isOperated)
                 calculatorScreen.Text = "";
             isOperated = false;
             Button button = (Button)sender;
@@ -112,27 +112,34 @@ namespace Simple_Calculator
         {
             if (isPositive)
             {
-               calculatorScreen.Text = calculatorScreen.Text.Insert(0, "-");
-               isPositive = false;
+                calculatorScreen.Text = calculatorScreen.Text.Insert(0, "-");
+                isPositive = false;
             }
             else
             {
-              calculatorScreen.Text = calculatorScreen.Text.Remove(0, 1);
-               isPositive = true;
+                calculatorScreen.Text = calculatorScreen.Text.Remove(0, 1);
+                isPositive = true;
             }
         }
 
         private void Sqrt_Click(object sender, EventArgs e)
         {
-            calculatorScreen.Text = Convert.ToString( Math.Sqrt(double.Parse(calculatorScreen.Text)));
-         //   operationScreen.Text = operationScreen.Text + " sqrt"
+            operationScreen.Text = "sqrt" + "(" + calculatorScreen.Text + ")";
+            calculatorScreen.Text = Convert.ToString(Math.Sqrt(double.Parse(calculatorScreen.Text)));
+            
         }
         //Need to show to operatorscreen
 
         private void Square_Click(object sender, EventArgs e)
         {
-            calculatorScreen.Text = Convert.ToString(Math.Pow(double.Parse(calculatorScreen.Text),2));
+            operationScreen.Text = "sqr" + "(" + calculatorScreen.Text + ")";
+            calculatorScreen.Text = Convert.ToString(Math.Pow(double.Parse(calculatorScreen.Text), 2));
         }
 
+        private void OneOver_Click(object sender, EventArgs e)
+        {
+            operationScreen.Text = "(1/" + calculatorScreen.Text + ")";
+            calculatorScreen.Text = Convert.ToString(1 / (double.Parse(calculatorScreen.Text)));
+        }
     }
 }

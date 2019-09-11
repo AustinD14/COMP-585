@@ -328,7 +328,7 @@
             this.button24.TabIndex = 30;
             this.button24.Text = "1/x";
             this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.Button24_Click);
+            this.button24.Click += new System.EventHandler(this.OneOver_Click);
             // 
             // calculatorScreen
             // 
