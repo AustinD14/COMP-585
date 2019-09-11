@@ -89,7 +89,7 @@
             this.positiveNegative.TabIndex = 8;
             this.positiveNegative.Text = "+ or -";
             this.positiveNegative.UseVisualStyleBackColor = true;
-            this.positiveNegative.Click += new System.EventHandler(this.Button24_Click);
+            this.positiveNegative.Click += new System.EventHandler(this.PosNeg_Click);
             // 
             // dot
             // 

@@ -17,6 +17,9 @@ namespace Simple_Calculator
         Double result = 0;
         String operation = "";
         bool isOperated = false;
+        bool isPositive = true;
+
+
         public Calculator()
         {
             InitializeComponent();
@@ -24,6 +27,7 @@ namespace Simple_Calculator
 
         private void Num_Click(object sender, EventArgs e)
         {
+
             if ((calculatorScreen.Text == "0") || isOperated )
                 calculatorScreen.Text = "";
             isOperated = false;
@@ -45,10 +49,21 @@ namespace Simple_Calculator
         private void Operator_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            operation = button.Text;
-            result = Double.Parse(calculatorScreen.Text);
-            isOperated = true;
-            operationScreen.Text = result + " " + operation + " ";
+
+            if (result != 0)
+            {
+                equal.PerformClick();
+                operation = button.Text;
+                isOperated = true;
+                operationScreen.Text = result + " " + operation + " ";
+            }
+            else
+            {
+                operation = button.Text;
+                result = Double.Parse(calculatorScreen.Text);
+                isOperated = true;
+                operationScreen.Text = result + " " + operation + " ";
+            }
         }
 
         private void Clear_Entry_Click(object sender, EventArgs e)
@@ -60,12 +75,14 @@ namespace Simple_Calculator
         private void Clear_Click(object sender, EventArgs e)
         {
             calculatorScreen.Text = "0";
+            operationScreen.Text = " ";
         }
 
         private void Backspace_Click(object sender, EventArgs e)
         {
-            calculatorScreen.Text = 
-                calculatorScreen.Text.Remove(calculatorScreen.Text.Length-1, 1);
+            if (calculatorScreen.Text.Length != 0)
+                calculatorScreen.Text =
+                    calculatorScreen.Text.Remove(calculatorScreen.Text.Length - 1, 1);
         }
 
         private void Equal_Click(object sender, EventArgs e)
@@ -85,8 +102,23 @@ namespace Simple_Calculator
                     calculatorScreen.Text = (result / Double.Parse(calculatorScreen.Text)).ToString();
                     break;
             }
-            operationScreen.Text = operationScreen.Text + calculatorScreen.Text;
+            // operationScreen.Text = operationScreen.Text + calculatorScreen.Text;
+            result = double.Parse(calculatorScreen.Text);
+            operationScreen.Text = " ";// NEED TO SEE ALL OPERATION, NEED CHANGING
         }
 
+        private void PosNeg_Click(object sender, EventArgs e)
+        {
+            if (isPositive)
+            {
+               calculatorScreen.Text = calculatorScreen.Text.Insert(0, "-");
+               isPositive = false;
+            }
+            else
+            {
+              calculatorScreen.Text = calculatorScreen.Text.Remove(0, 1);
+               isPositive = true;
+            }
+        }
     }
 }
