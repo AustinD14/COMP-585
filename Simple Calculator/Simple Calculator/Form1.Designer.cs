@@ -306,7 +306,7 @@
             this.button22.TabIndex = 28;
             this.button22.Text = "SQRT()";
             this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.Button24_Click);
+            this.button22.Click += new System.EventHandler(this.Sqrt_Click);
             // 
             // button23
             // 
@@ -317,7 +317,7 @@
             this.button23.TabIndex = 29;
             this.button23.Text = "x^2";
             this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.Button24_Click);
+            this.button23.Click += new System.EventHandler(this.Square_Click);
             // 
             // button24
             // 

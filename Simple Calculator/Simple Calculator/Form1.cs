@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 //RENAME DESIGNS
 
 namespace Simple_Calculator
@@ -102,7 +103,7 @@ namespace Simple_Calculator
                     calculatorScreen.Text = (result / Double.Parse(calculatorScreen.Text)).ToString();
                     break;
             }
-            // operationScreen.Text = operationScreen.Text + calculatorScreen.Text;
+            //operationScreen.Text = operationScreen.Text + calculatorScreen.Text;
             result = double.Parse(calculatorScreen.Text);
             operationScreen.Text = " ";// NEED TO SEE ALL OPERATION, NEED CHANGING
         }
@@ -120,5 +121,18 @@ namespace Simple_Calculator
                isPositive = true;
             }
         }
+
+        private void Sqrt_Click(object sender, EventArgs e)
+        {
+            calculatorScreen.Text = Convert.ToString( Math.Sqrt(double.Parse(calculatorScreen.Text)));
+         //   operationScreen.Text = operationScreen.Text + " sqrt"
+        }
+        //Need to show to operatorscreen
+
+        private void Square_Click(object sender, EventArgs e)
+        {
+            calculatorScreen.Text = Convert.ToString(Math.Pow(double.Parse(calculatorScreen.Text),2));
+        }
+
     }
 }
