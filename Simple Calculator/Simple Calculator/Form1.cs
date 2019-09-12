@@ -8,9 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-//RENAME DESIGNS
-
 namespace Simple_Calculator
 {
     public partial class Calculator : Form
@@ -40,11 +37,6 @@ namespace Simple_Calculator
             }
             else
                 calculatorScreen.Text = calculatorScreen.Text + button.Text;
-        }
-
-        private void Button24_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Operator_Click(object sender, EventArgs e)
@@ -157,6 +149,19 @@ namespace Simple_Calculator
         {
             operationScreen.Text = operationScreen.Text + "(1/" + calculatorScreen.Text + ")";
             calculatorScreen.Text = Convert.ToString(1 / (double.Parse(calculatorScreen.Text)));
+        }
+
+        private void Percent_Click(object sender, EventArgs e)
+        {
+            if (operationScreen.Text != "" || operationScreen.Text != " "|| operationScreen.Text != null)
+            {
+                operationScreen.Text = operationScreen.Text + "0";
+                calculatorScreen.Text = "0";
+            }
+            else
+            {
+            //    calculatorScreen.Text = Convert.ToString(result * double.Parse(calculatorScreen.Text.Insert());
+            }
         }
     }
 }
