@@ -160,8 +160,18 @@ namespace Simple_Calculator
             }
             else
             {
-            //    calculatorScreen.Text = Convert.ToString(result * double.Parse(calculatorScreen.Text.Insert());
+            //    calculatorScreen.Text = Convert.ToString(result * double.Parse(calculatorScreen.Text.Insert(calculatorScreen.Text.Length)));
             }
+        }
+
+        private void OperationScreen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CalculatorScreen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
