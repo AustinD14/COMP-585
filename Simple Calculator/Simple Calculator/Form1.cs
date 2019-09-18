@@ -163,5 +163,10 @@ namespace Simple_Calculator
             //    calculatorScreen.Text = Convert.ToString(result * double.Parse(calculatorScreen.Text.Insert());
             }
         }
+
+        private void History_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
