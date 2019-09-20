@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Simple_Calculator
 {
-    public partial class Form2 : Form
+    public partial class History : Form
     {
-        public Form2()
+        public History()
         {
             InitializeComponent();
+        }
+
+        public void historyData(string data, bool isEqualed)
+        {
+            historyScreen.Text += data;
         }
     }
 }

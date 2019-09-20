@@ -8,3 +8,4 @@ C:\Users\austi\source\repos\COMP-585\Simple Calculator\Simple Calculator\obj\Deb
 C:\Users\austi\source\repos\COMP-585\Simple Calculator\Simple Calculator\obj\Debug\Simple Calculator.exe
 C:\Users\austi\source\repos\COMP-585\Simple Calculator\Simple Calculator\obj\Debug\Simple Calculator.pdb
 C:\Users\austi\source\repos\COMP-585\Simple Calculator\Simple Calculator\obj\Debug\Simple_Calculator.Calculator.resources
+C:\Users\austi\source\repos\COMP-585\Simple Calculator\Simple Calculator\obj\Debug\Simple_Calculator.History.resources

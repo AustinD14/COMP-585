@@ -16,6 +16,8 @@ namespace Simple_Calculator
         String operation = "";
         bool isOperated = false;
         bool isPositive = true;
+        bool isEqualed = false;
+        History historyForm = new History();
 
 
         public Calculator()
@@ -23,12 +25,22 @@ namespace Simple_Calculator
             InitializeComponent();
         }
 
+
+
         private void Num_Click(object sender, EventArgs e)
         {
 
             if ((calculatorScreen.Text == "0") || isOperated)
                 calculatorScreen.Text = "";
+
+            if(isEqualed)
+            {
+                calculatorScreen.Text = "";
+                result = 0;
+            }
+   
             isOperated = false;
+            isEqualed = false;
             Button button = (Button)sender;
             if (button.Text == ".")
             {
@@ -96,10 +108,13 @@ namespace Simple_Calculator
                     calculatorScreen.Text = (result / Double.Parse(calculatorScreen.Text)).ToString();
                     break;
             }
+           // historyForm.historyData(calculatorScreen.Text);
             result = double.Parse(calculatorScreen.Text);
         }
         private void Equal_Click(object sender, EventArgs e)
         {
+            isEqualed = true;
+            historyForm.historyData(operationScreen.Text + " " + calculatorScreen.Text + "\n", isEqualed);
             switch (operation)
             {
                 case "+":
@@ -116,6 +131,7 @@ namespace Simple_Calculator
                     break;
             }
             result = double.Parse(calculatorScreen.Text);
+            historyForm.historyData(calculatorScreen.Text + "\n\n", isEqualed);
             operationScreen.Text = " ";
         }
         private void PosNeg_Click(object sender, EventArgs e)
@@ -166,7 +182,10 @@ namespace Simple_Calculator
 
         private void History_Click(object sender, EventArgs e)
         {
-
+            //Form calculatorScreen = new Form();
+            historyForm.Show();
         }
+
+
     }
 }
