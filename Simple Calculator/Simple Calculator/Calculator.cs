@@ -12,20 +12,19 @@ namespace Simple_Calculator
 {
     public partial class Calculator : Form
     {
+        History historyForm = new History();
+
         Double result = 0;
         String operation = "";
+
         bool isOperated = false;
         bool isPositive = true;
         bool isEqualed = false;
-        History historyForm = new History();
-
 
         public Calculator()
         {
             InitializeComponent();
         }
-
-
 
         private void Num_Click(object sender, EventArgs e)
         {
@@ -108,13 +107,12 @@ namespace Simple_Calculator
                     calculatorScreen.Text = (result / Double.Parse(calculatorScreen.Text)).ToString();
                     break;
             }
-           // historyForm.historyData(calculatorScreen.Text);
             result = double.Parse(calculatorScreen.Text);
         }
         private void Equal_Click(object sender, EventArgs e)
         {
             isEqualed = true;
-            historyForm.historyData(operationScreen.Text + " " + calculatorScreen.Text + "\n", isEqualed);
+            historyForm.historyData(operationScreen.Text + " " + calculatorScreen.Text + "\n");
             switch (operation)
             {
                 case "+":
@@ -131,7 +129,7 @@ namespace Simple_Calculator
                     break;
             }
             result = double.Parse(calculatorScreen.Text);
-            historyForm.historyData(calculatorScreen.Text + "\n\n", isEqualed);
+            historyForm.historyData(calculatorScreen.Text + "\n\n");
             operationScreen.Text = " ";
         }
         private void PosNeg_Click(object sender, EventArgs e)
@@ -176,16 +174,13 @@ namespace Simple_Calculator
             }
             else
             {
-            //    calculatorScreen.Text = Convert.ToString(result * double.Parse(calculatorScreen.Text.Insert());
             }
         }
 
         private void History_Click(object sender, EventArgs e)
         {
-            //Form calculatorScreen = new Form();
+            this.Hide();
             historyForm.Show();
         }
-
-
     }
 }

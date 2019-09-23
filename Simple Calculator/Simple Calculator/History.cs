@@ -17,7 +17,7 @@ namespace Simple_Calculator
             InitializeComponent();
         }
 
-        public void historyData(string data, bool isEqualed)
+        public void historyData(string data)
         {
             historyScreen.Text += data;
         }

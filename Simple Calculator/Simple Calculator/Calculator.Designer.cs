@@ -263,7 +263,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.operationScreen);
             this.Controls.Add(this.One);
