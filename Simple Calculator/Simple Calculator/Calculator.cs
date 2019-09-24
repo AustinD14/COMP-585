@@ -14,6 +14,7 @@ namespace Simple_Calculator
     {
         History historyForm = new History();
 
+
         Double result = 0;
         String operation = "";
 
@@ -180,6 +181,7 @@ namespace Simple_Calculator
         private void History_Click(object sender, EventArgs e)
         {
             this.Hide();
+            historyForm.Closed += (s, args) => this.Close();
             historyForm.Show();
         }
     }

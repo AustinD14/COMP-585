@@ -163,7 +163,7 @@
     <value>Microsoft Sans Serif, 13.875pt, style=Bold</value>
   </data>
   <data name="zero.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 891</value>
+    <value>192, 884</value>
   </data>
   <data name="zero.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -193,7 +193,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="positiveNegative.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 891</value>
+    <value>15, 884</value>
   </data>
   <data name="positiveNegative.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -223,7 +223,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="dot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 891</value>
+    <value>369, 884</value>
   </data>
   <data name="dot.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -253,7 +253,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="equal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 891</value>
+    <value>547, 884</value>
   </data>
   <data name="equal.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -283,7 +283,7 @@
     <value>Microsoft Sans Serif, 13.875pt, style=Bold</value>
   </data>
   <data name="two.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 774</value>
+    <value>192, 767</value>
   </data>
   <data name="two.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -313,7 +313,7 @@
     <value>Microsoft Sans Serif, 13.875pt, style=Bold</value>
   </data>
   <data name="three.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 774</value>
+    <value>369, 767</value>
   </data>
   <data name="three.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -343,7 +343,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="plus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 774</value>
+    <value>547, 767</value>
   </data>
   <data name="plus.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -373,7 +373,7 @@
     <value>Microsoft Sans Serif, 13.875pt, style=Bold</value>
   </data>
   <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 657</value>
+    <value>15, 650</value>
   </data>
   <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -403,7 +403,7 @@
     <value>Microsoft Sans Serif, 13.875pt, style=Bold</value>
   </data>
   <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 657</value>
+    <value>192, 650</value>
   </data>
   <data name="button10.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -433,7 +433,7 @@
     <value>Microsoft Sans Serif, 13.875pt, style=Bold</value>
   </data>
   <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 540</value>
+    <value>15, 533</value>
   </data>
   <data name="button11.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -463,7 +463,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 657</value>
+    <value>547, 650</value>
   </data>
   <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -493,7 +493,7 @@
     <value>Microsoft Sans Serif, 13.875pt, style=Bold</value>
   </data>
   <data name="button13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 657</value>
+    <value>369, 650</value>
   </data>
   <data name="button13.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -523,7 +523,7 @@
     <value>Microsoft Sans Serif, 13.875pt, style=Bold</value>
   </data>
   <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 540</value>
+    <value>192, 533</value>
   </data>
   <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -553,7 +553,7 @@
     <value>Microsoft Sans Serif, 13.875pt, style=Bold</value>
   </data>
   <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 540</value>
+    <value>369, 533</value>
   </data>
   <data name="button15.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -583,7 +583,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 540</value>
+    <value>547, 533</value>
   </data>
   <data name="button16.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -613,7 +613,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="button17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 423</value>
+    <value>15, 416</value>
   </data>
   <data name="button17.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -643,7 +643,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 423</value>
+    <value>192, 416</value>
   </data>
   <data name="button18.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -673,7 +673,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="backspace.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 423</value>
+    <value>369, 416</value>
   </data>
   <data name="backspace.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -703,7 +703,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="button20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 423</value>
+    <value>547, 416</value>
   </data>
   <data name="button20.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -733,7 +733,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="button21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 306</value>
+    <value>15, 299</value>
   </data>
   <data name="button21.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -763,7 +763,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="button22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 306</value>
+    <value>192, 299</value>
   </data>
   <data name="button22.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -793,7 +793,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="button23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 306</value>
+    <value>369, 299</value>
   </data>
   <data name="button23.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -823,7 +823,7 @@
     <value>Microsoft Sans Serif, 13.875pt</value>
   </data>
   <data name="button24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 306</value>
+    <value>547, 299</value>
   </data>
   <data name="button24.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -850,10 +850,10 @@
     <value>Microsoft Sans Serif, 24pt, style=Bold</value>
   </data>
   <data name="calculatorScreen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 167</value>
+    <value>15, 160</value>
   </data>
   <data name="calculatorScreen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>694, 125</value>
+    <value>704, 125</value>
   </data>
   <data name="calculatorScreen.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -883,7 +883,7 @@
     <value>Microsoft Sans Serif, 13.875pt, style=Bold</value>
   </data>
   <data name="One.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 774</value>
+    <value>15, 767</value>
   </data>
   <data name="One.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 111</value>
@@ -910,10 +910,10 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="operationScreen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 67</value>
+    <value>15, 60</value>
   </data>
   <data name="operationScreen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>694, 100</value>
+    <value>704, 100</value>
   </data>
   <data name="operationScreen.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -934,7 +934,7 @@
     <value>1</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 13</value>
+    <value>616, 8</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 51</value>
@@ -2701,6 +2701,12 @@
         AAAAAA////AAAAAAD///+AAAAAAf///4AAAAAB////wAAAAAP///////////////////////////////
         /////////////w==
 </value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>754, 1080</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>754, 1080</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

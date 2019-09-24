@@ -12,6 +12,8 @@ namespace Simple_Calculator
 {
     public partial class History : Form
     {
+ 
+
         public History()
         {
             InitializeComponent();
@@ -20,6 +22,15 @@ namespace Simple_Calculator
         public void historyData(string data)
         {
             historyScreen.Text += data;
+        }
+
+        private void History_Click(object sender, EventArgs e)
+        {
+            Calculator calculatorForm = new Calculator();
+            this.Hide();
+            calculatorForm.Closed += (s, args) => this.Close();
+            calculatorForm.Show();
+
         }
     }
 }
