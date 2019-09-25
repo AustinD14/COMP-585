@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
-            this.label1 = new System.Windows.Forms.Label();
             this.zero = new System.Windows.Forms.Button();
             this.positiveNegative = new System.Windows.Forms.Button();
             this.dot = new System.Windows.Forms.Button();
@@ -58,11 +57,6 @@
             this.operationScreen = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // zero
             // 
@@ -236,6 +230,7 @@
             // 
             // calculatorScreen
             // 
+            this.calculatorScreen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.calculatorScreen, "calculatorScreen");
             this.calculatorScreen.Name = "calculatorScreen";
             // 
@@ -290,7 +285,6 @@
             this.Controls.Add(this.dot);
             this.Controls.Add(this.positiveNegative);
             this.Controls.Add(this.zero);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.plus);
             this.Name = "Calculator";
             this.ResumeLayout(false);
@@ -299,8 +293,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button zero;
         private System.Windows.Forms.Button positiveNegative;
         private System.Windows.Forms.Button dot;
